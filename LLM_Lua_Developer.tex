@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\setlength{\columnsep}{1pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Gustavo Sousa} \\ \vspace{1pt}
+    São Paulo, Brazil \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (15) 99194-8282 ~ 
+    \href{mailto:gnyrcs@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{ngst.profissional@gmail.com}} ~ 
+    \href{https://linkedin.com/in/scryng}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/scryng}}  ~
+    \href{https://github.com/scryng}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/scryng}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senai São Paulo}{Jan. 2024 -- Dec. 2025}
+      {Bachelor's in Systems Analysis and Development}{Sorocaba, São Paulo}
+    \resumeSubheading
+      {Senai São Paulo}{Aug. 2019 -- Jul. 2021}
+      {Technical Degree in Electronics}{Sorocaba, São Paulo}
+  \resumeSubHeadingListEnd
+
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Full Stack Development
+            \item Integration of IT and Automation Technologies
+            \item Industry 4.0 Tools and Concepts
+            \item Mobile and Web Solutions Development
+            \item Data Structures and Algorithms
+            \item Big Data and Analytics
+            \item Cybersecurity Risk Analysis
+            \item Database Management and Interaction
+            \item Software Engineering and Methodologies
+            \item Cloud Computing (AWS, Cisco, Nokia)
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Scryng}{Feb. 2022 -- Present - 3 yrs 1 mo}
+      {Lua Developer}{Brazil (Remote)}
+      \resumeItemListStart
+      \resumeItem{Back-End development for scripts in gaming engines using Lua programming language.}
+        \resumeItem{Version control of all scripts for project with Git, GitHub and GitFlow using branch management and commit patterns.}
+        \resumeItem{Working in a fast-paced and dynamic environment for continuous deliveries using of LLMs/AI for coding for aprimorate and automate code demands.}
+        \resumeItem{Optimization and debug Lua code to enhance system functionality and reduce errors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {2RP Net}{Mar. 2024 -- Present - 1 yr}
+      {Full Stack Developer}{Brazil (Remote)}
+      \resumeItemListStart
+        \resumeItem{Working on robust solutions using Python and best practices in developing high-performance scripts using LLM/AI for dynamic and personalized results of inputs to improve data migrations to Google Cloud Platform (GCP) for large companies, always creating documentation using DocString, Markdown and Mermaid for easy maintenance and future scalability among the team.}
+        \resumeItem{Implementing commit patterns and branch management for script code versioning along with system adaptations for observability and scalability.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/coffee_shop_mvc}{\raisebox{-0.2\height}\faGithub\ \underline{Coffeeshop MVC}}} $|$ \emph{CSharp, .NET, Git}}{Dec. 2024} \\ 
+        \resumeItemListStart
+            \resumeItem{Created the Web API with ASP.NET, Scanfolding (code generator) and Entity Core Framework.}
+            \resumeItem{Performed tests using Swagger, Postman and Powershell.}
+            \resumeItem{Implemented Data Transfer Object (DTO) to protect against excessive posting and/or sensitive data in the Web API.}
+        \resumeItemListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/queue_challenge_for_5v5_matches}{\raisebox{-0.2\height}\faGithub\ \underline{Queue System for PvP 5v5 Matches}}} $|$ \emph{Lua, Git}}{Nov. 2024} \\ 
+        \resumeItemListStart
+            \resumeItem{I developed a queue system that identifies groups of players looking for a match and forms teams ready to request the creation of a game mode match.}
+            \resumeItem{Player groups persist after the match ends, with players returning to search for new teams and/or matches without disbanding the group.}
+        \resumeItemListEnd
+        \vspace{24pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/apis_banking_ecosystem}{\raisebox{-0.2\height}\faGithub\ \underline{API's Banking Ecosystem}}} $|$ \emph{Python, Poetry, RabbitMQ, Linux, Docker and k8s, Git}}{Sep. 2024} \\ 
+        \resumeItemListStart
+            \resumeItem{Created microservices to compose a banking ecosystem containing a webhook application, a data storage application, a streaming application for products, an SQL database, a NoSQL database, and a messaging service (RabbitMQ and Pub/Sub).}
+            \resumeItem{Implementation of an ecosystem capable of encrypting event data of three different types, sending it to a messaging topic to manage the queue, and redirecting this data to the storage API in the database, enabling a streaming API to consume the data.}
+            \resumeItem{Used Load Balance to handle scale, and Docker containers to facilitate the evaluation and testing of applications.}
+        \resumeItemListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/game_pacman_java}{\raisebox{-0.2\height}\faGithub\ \underline{Pacman Java Game}}} $|$ \emph{Java, JavaFX, IntelliJ IDEA, Git}}{Jul. 2024} \\ 
+          \resumeItemListStart
+            \resumeItem{I created a Pacman game using Java and Object Oriented Programming using its advantages such as abstract classes, inheritance, polymorphism, static classes, interfaces.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{City of FiveM GTA V} $|$ \emph{Lua, vRP, SQL, Cloud Computing, Git, LLM}}{Jul. 2022} \\ 
+        \resumeItemListStart
+            \resumeItem{I developed a GTA V Roleplay city with several systems simulating real life.}
+            \resumeItem{Improved and refactored the entire database pattern and function structuring of the Framework to ensure a high-level server.}
+            \resumeItem{Hosting, versioning and continuous delivery of the city to players, bringing recurring updates and improvements.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Lua, TypeScript, Python, CSharp, Java, SQL, C++} \\ 
+     \textbf{Frameworks and Tools}{: vRP, Nest, FastAPI, ASP.NET, Spring} \\ 
+     \textbf{Databases}{: SQLite, PostgreSQL, MongoDB, MariaDB} \\ 
+     \textbf{Cloud and DevOps}{: Docker and k8s, Linux, Git, AWS, GCP} \\ 
+     \textbf{Methodologies}{: Agile, Scrum, CI/CD, System Design, Design Patterns} \\ 
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeItem{Introduction to Data Analytics on Google Cloud}
+    \resumeItem{Analyze Speech and Language with Google APIs Skill Badge}
+    \resumeItem{Build a Secure Google Cloud Network Skill Badge}
+    \resumeItem{Build and Deploy Machine Learning Solutions on Vertex AI Skill Badge}
+    \resumeItem{Create ML Models with BigQuery ML Skill Badge}
+    \resumeItem{Google Cloud Computing Foundations Certificate}
+    \resumeItem{Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud}
+    \resumeItem{Google Cloud Computing Foundations: Infrastructure in Google Cloud}
+    \resumeItem{Google Cloud Computing Foundations: Networking }
+    \resumeItem{Introduction to AI and Machine Learning on Google Cloud}
+    \resumeItem{Prepare Data for ML APIs on Google Cloud Skill Badge}
+    \resumeItem{Set Up an App Dev Environment on Google Cloud Skill Badge}
+    \resumeItem{Use Machine Learning APIs on Google Cloud Skill Badge}
+    \resumeItem{Implement Load Balancing on Compute Engine Skill Badge}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------LANGUAGES-----------
+\section{Languages}
+  \resumeSubHeadingListStart
+    \resumeItem{Portuguese - Native}
+    \resumeItem{English - Professional proficiency (B2)}
+    \resumeItem{Spanish - Basic knowledge}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\end{document}
