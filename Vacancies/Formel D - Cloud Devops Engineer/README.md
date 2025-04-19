@@ -28,6 +28,7 @@ Cloud DevOps Engineer
 - R$ 6.500,00  
 
 ## Sobre a empresa:
+```
 Gustavo,  para você conhecer um pouquinho a empresa. A Formel D é uma multinacional alemã especializada em serviços para empresas do setor automotivo. Com 30 anos de experiência e uma presença global em 21 países e mais de 10 estados brasileiros, nossa matriz está localizada em São Bernardo do Campo, SP, e possuímos 7 escritórios físicos no Brasil.  
 
 Dedicada à excelência em Qualidade, Engenharia e Tecnologia, oferecemos soluções especializadas e alocamos profissionais altamente qualificados. Mantemos parcerias com renomadas montadoras e fabricantes de peças, como Stellantis, Renault, BMW, Yasaki, CNHi, entre outras líderes do setor.  
