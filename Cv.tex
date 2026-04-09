@@ -1,0 +1,278 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez, adapted by Gustavo Sousa
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% serif
+\usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{geometry}
+\geometry{left=1in, right=1in, top=1in, bottom=1in}
+\setlength{\columnsep}{1pt}
+
+\begin{document}
+
+%----------CABEÇALHO----------
+\begin{center}
+    {\Huge \scshape Gustavo Sousa} \\ \vspace{1pt}
+    Engenheiro de Software \enskip | \enskip São Paulo, Brasil \\ \vspace{1pt}
+    \small 
+    \href{https://wa.me/+5515991948282}{\raisebox{-0.1\height}\faWhatsapp\ \underline{(15) 99194-8282}} \enskip ~
+    \href{mailto:ngst.profissional@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{ngst.profissional@gmail.com}} \enskip ~
+    \href{https://linkedin.com/in/scryng}{\raisebox{-0.2\height}\faLinkedin\ \underline{LinkedIn}} \enskip ~
+    \href{https://github.com/scryng}{\raisebox{-0.2\height}\faGithub\ \underline{GitHub}} \\
+    \vspace{-8pt}
+\end{center}
+
+%-----------SOBRE-----------
+\section{Sobre}
+    Engenheiro de Software com 7 anos de experiência, com atuação transversal em \textbf{arquitetura de soluções} (software e integração com hardware quando aplicável), \textbf{engenharia full stack} e \textbf{especificação técnica}: traduzo necessidades de negócio e restrições de plataforma em arquitetura de sistemas, contratos de API, modelos de dados e pipelines de entrega. Stack atual forte em \textbf{C\# (.NET)}, \textbf{React}, \textbf{React Native}, \textbf{TypeScript}, além de histórico com \textbf{Java/Kotlin (Spring)}, TypeScript (NestJS) e Python (FastAPI, Django) em alto volume. Front-end também com \textbf{Vue.js}, \textbf{Vite} e \textbf{Next.js}. \textbf{Bancos de dados} relacionais e NoSQL, \textbf{CI/CD} (GitHub Actions, GitFlow), nuvem (\textbf{AWS}, GCP), Docker/Kubernetes, mensageria (RabbitMQ, Pub/Sub, Kafka). Conduzo melhorias de processo em \textbf{Scrum}, padronização de repositórios e governança de infraestrutura (deploy, DNS, ambientes). Inglês B2+.
+\vspace{-10pt}
+
+%-----------EDUCAÇÃO-----------
+\section{Educação}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senai São Paulo}{}
+      {Superior em Análise e Desenvolvimento de Sistemas}{}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------CONHECIMENTOS RELEVANTES-----------
+\section{Conhecimentos Relevantes}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small \textbf{Back-end}: C\# (.NET), Java/Kotlin (Spring), APIs REST, microsserviços, Clean Architecture; TypeScript (NestJS); Python (FastAPI, Django) em produção
+            \item\small \textbf{Front-end}: React, React Native, Vue.js, Vite, TypeScript, Next.js, Tailwind; integração com APIs e tempo real
+            \item\small \textbf{Bancos de dados}: PostgreSQL, MySQL, MariaDB, MongoDB, Redis; modelagem e performance
+            \item\small \textbf{CI/CD e DevOps}: GitHub Actions, GitFlow, Docker, Kubernetes; AWS (deploy, rede, DNS em produção) e GCP
+            \item\small Mensageria: RabbitMQ, Pub/Sub, Kafka
+            \item\small \textbf{Governança e especificação}: ADRs, revisão de arquitetura, ESF/análise funcional, code review, onboarding
+            \item\small Metodologias: Agile, Scrum, System Design, testes automatizados
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+%-----------EXPERIÊNCIA-----------
+\section{Experiência Profissional}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DATASMARTCOM}{Ago. 2025 -- Presente}
+      {Engenheiro de Software}{Alphaville, São Paulo, Brasil}
+      \resumeItemListStart
+        \resumeItem{\textit{Contexto}: atuação com entregas simultâneas em \textbf{.NET} e clientes \textbf{React/React Native} sobre \textbf{AWS}; necessidade de alinhar integração software--hardware e tráfego seguro (DNS, endpoints, ambientes). \textit{Ação}: desenhei e socializei \textbf{arquitetura de solução} (camadas, integrações, limites de domínio), documentando decisões e contratos de API. \textit{Resultado}: base técnica única para evolução do produto, menos retrabalho entre times e deploy previsível.}
+        \resumeItem{\textit{Contexto}: padronização e previsibilidade de release. \textit{Ação}: melhorias no \textbf{Scrum} (DoD, fatiamento de épicos, riscos visíveis) e \textbf{padronização de projetos} (layout de repo, convenções, branches); \textbf{CI/CD com GitHub Actions} para build, testes e promoção de artefatos na \textbf{AWS}. \textit{Resultado}: pipeline auditável, releases mais frequentes e menos retrabalho em review.}
+        \resumeItem{\textit{Tarefa}: engenharia \textbf{full stack}---APIs e serviços em \textbf{C\# (.NET)}, interfaces web em \textbf{React} e apps em \textbf{React Native}. \textit{Ação}: implementação end-to-end com autenticação, consumo de APIs e tratamento offline/estado conforme plataforma. \textit{Resultado}: features homogêneas entre canais e tempo de feedback reduzido com stakeholders.}
+        \resumeItem{\textit{Contexto}: requisitos dispersos entre clientes internos e externos. \textit{Ação}: \textbf{levantamento e refinamento} com stakeholders; produção e revisão de \textbf{especificações técnicas e funcionais} (fluxos, critérios de aceite, matriz de rastreabilidade). \textit{Resultado}: escopo negociável, priorização fundamentada e menos defeitos por ambiguidade.}
+        \resumeItem{\textit{Contexto}: operação em nuvem exigindo governança de infra e dados. \textit{Ação}: participei da \textbf{gestão de infraestrutura AWS} (ambientes, \textbf{deploy}, \textbf{DNS}, conectividade), modelagem/consulta em \textbf{bancos de dados} e políticas de backup/migração quando aplicável. \textit{Resultado}: ambientes estáveis, incidentes de configuração reduzidos e dados alinhados ao desenho da solução.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {WinsVue}{Mar. 2025 -- Set. 2025}
+      {Software Engineer}{Sankt Gallen, Suíça (Remoto)}
+      \resumeItemListStart
+        \resumeItem{\textit{Contexto}: microsserviços e front \textbf{Vue.js/React} com SLAs rígidos. \textit{Ação}: fui \textbf{ponto focal} para decisões de arquitetura, integração front--back e observabilidade (do desenho ao deploy). \textit{Resultado}: entregas coordenadas e visibilidade de falhas em produção.}
+        \resumeItem{\textit{Tarefa}: escalabilidade e latência. \textit{Ação}: microsserviços com \textbf{Python (FastAPI, Django)}, RabbitMQ, MongoDB, PostgreSQL, Redis, ElasticSearch. \textit{Resultado}: latência reduzida em 20\%.}
+        \resumeItem{\textit{Ação}: APIs REST/JWT consumidas por \textbf{Vue.js/React} (NUI); contratos versionados. \textit{Resultado}: disponibilidade declarada em 99,9\%.}
+        \resumeItem{\textit{Ação}: \textbf{GitHub Actions}, GitFlow, Docker com provisionamento automatizado; Grafana/Prometheus. \textit{Resultado}: deploy ~30\% mais rápido; performance +15\% após tuning.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Evolvebrasil.com}{Nov. 2024 -- Ago. 2025}
+      {Engenheiro de Software}{São Paulo, Brasil (Remoto)}
+      \resumeItemListStart
+        \resumeItem{\textit{Contexto}: plataforma comercial (inventário, caixa, métricas). \textit{Ação}: atuei ponta a ponta---domínio, \textbf{back-end}, \textbf{front-end (React/Next.js)} e integrações---com ownership de fatias críticas. \textit{Resultado}: visão única de estoque e financeiro em tempo quase real.}
+        \resumeItem{\textit{Tarefa}: microsserviços financeiros na \textbf{GCP}. \textit{Ação}: \textbf{Python (Django)}, \textbf{RabbitMQ}, \textbf{Pub/Sub}, \textbf{PostgreSQL}, \textbf{MongoDB}; \textbf{Docker/Kubernetes}. \textit{Resultado}: processamento diário de transações com elasticidade.}
+        \resumeItem{\textit{Contexto}: clientes desktop e web desalinhados. \textit{Ação}: camada \textbf{NestJS/TypeScript} com sincronização offline-first. \textit{Resultado}: 99,9\% disponibilidade e consistência sem depender de rede contínua.}
+        \resumeItem{\textit{Ação}: \textbf{GitFlow}, \textbf{PyTest}, revisões sistemáticas. \textit{Resultado}: ritmo de time sustentável e regressões contidas.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {2RP Net}{Jan. 2024 -- Jun. 2025}
+      {Desenvolvedor Back-End}{São Paulo, Brasil (Remoto)}
+      \resumeItemListStart
+        \resumeItem{\textit{Contexto}: IoT em domínio bancário com requisitos de segurança. \textit{Ação}: integrações em \textbf{Java (Spring Boot)}, canais seguros, processamento em tempo real. \textit{Resultado}: ingestão confiável de eventos de dispositivos.}
+        \resumeItem{\textit{Tarefa}: alto volume (1M+ transações/dia). \textit{Ação}: \textbf{Python (Django)} na GCP com LLM/IA para respostas dinâmicas. \textit{Resultado}: throughput estável sob pico de carga.}
+        \resumeItem{\textit{Ação}: microsserviços (depósitos, saques, pagamentos) com \textbf{PostgreSQL}, \textbf{MongoDB}, RabbitMQ, Pub/Sub; \textbf{Docker/Kubernetes}. \textit{Resultado}: escala horizontal conforme demanda.}
+        \resumeItem{\textit{Ação}: \textbf{GitFlow}, \textbf{PyTest} (~90\% cobertura). \textit{Resultado}: qualidade acoplada ao pipeline de entrega.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Scryng}{Jan. 2019 -- Mar. 2025}
+      {Desenvolvedor Fullstack}{São Paulo, Brasil (Remoto)}
+      \resumeItemListStart
+        \resumeItem{\textit{Contexto}: ecossistema de jogos com filas e balanceamento 5v5. \textit{Ação}: núcleo de orquestração e persistência de grupos em \textbf{Lua}, acoplado a fluxos de matchmaking. \textit{Resultado}: formação de 100+ equipes/hora com estado de fila consistente.}
+        \resumeItem{\textit{Contexto}: exposição de regras e dados via HTTP para clientes e automações. \textit{Ação}: serviços e APIs em \textbf{C\# (.NET)} (contratos REST, serialização, camadas de aplicação). \textit{Resultado}: integrações estáveis entre domínio de jogo, persistência e consumidores.}
+        \resumeItem{\textit{Contexto}: IoT (ESP32, RFID) e volume de eventos variável. \textit{Ação}: \textbf{Python} para scripts, consumo de APIs e pontes de integração; persistência em \textbf{SQL/NoSQL} e APIs REST para telemetria e comandos. \textit{Resultado}: protótipos e integrações com ciclo curto e dados auditáveis.}
+        \resumeItem{\textit{Contexto}: software educacional com UX desktop. \textit{Ação}: aplicações em \textbf{Java (JavaFX)} (modelagem de telas, fluxos, integração com backends); documentação com Markdown/Mermaid. \textit{Resultado}: entregas utilizáveis por terceiros e evolução rastreável.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------PROJETOS-----------
+\section{Projetos}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/apis_banking_ecosystem}{\raisebox{-0.2\height}\faGithub\ \underline{Ecossistema de APIs Bancárias}}} $|$ \emph{Python, FastAPI, RabbitMQ, Docker, Kubernetes, Git}}{2024}
+        \resumeItemListStart
+            \resumeItem{Criei microsserviços bancários com \textbf{Python (FastAPI)}, processando 10.000 eventos/hora com latência de 50ms, usando RabbitMQ e PostgreSQL.}
+            \resumeItem{Implementei load balancing e containers Docker, garantindo escalabilidade e testes automatizados com PyTest.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/tag_system}{\raisebox{-0.2\height}\faGithub\ \underline{TAG System}}} $|$ \emph{C\#, ASP.NET, React, Next.js, TypeScript}}{2024}
+        \resumeItemListStart
+            \resumeItem{Sistema IIoT (ESP32, RFID) com \textbf{ASP.NET} no back-end e aplicação web em \textbf{React}, \textbf{TypeScript} e \textbf{Next.js}; 500+ acessos/hora.}
+            \resumeItem{Autenticação segura, dashboards em tempo real e integração API $\leftrightarrow$ front-end.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/flask_erp_api}{\raisebox{-0.2\height}\faGithub\ \underline{ERP API}}} $|$ \emph{Python, Flask, PostgreSQL, Git}}{2022}
+        \resumeItemListStart
+            \resumeItem{Desenvolvi uma API RESTful com \textbf{Python (Flask)} para integração com sistemas ERP, suportando CRUD em PostgreSQL.}
+            \resumeItem{Realizei testes automatizados com PyTest, alcançando 95\% de cobertura de código.}
+        \resumeItemListEnd
+        \vspace{-12pt}
+      \resumeProjectHeading
+        {\textbf{\href{https://github.com/scryng/queue_challenge_for_5v5_matches}{\raisebox{-0.2\height}\faGithub\ \underline{Sistema de Fila}}} $|$ \emph{Lua, Git}}{2018}
+        \resumeItemListStart
+            \resumeItem{Desenvolvi sistema de filas, formando 100+ equipes/hora com persistência de grupos.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------HABILIDADES-----------
+\section{Habilidades Técnicas}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Back-end}{: C\# (.NET), Java/Kotlin (Spring), Python (FastAPI, Django, Flask), TypeScript (NestJS)} \\
+     \textbf{Front-end}{: React, React Native, Vue.js, Next.js, Vite, TypeScript, Tailwind} \\
+     \textbf{Banco de dados}{: PostgreSQL, MongoDB, MySQL, MariaDB, Redis} \\
+     \textbf{Cloud e CI/CD}{: AWS (deploy, rede, DNS), GCP, Docker, Kubernetes, Git, GitHub Actions, GitFlow} \\
+     \textbf{Mensageria}{: RabbitMQ, Pub/Sub, Kafka (familiaridade)} \\
+     \textbf{Testes}{: xUnit/NUnit (.NET), JUnit/Mockito (Java), PyTest; testes de integração; Postman, Swagger/OpenAPI} \\
+     \textbf{Práticas}{: arquitetura de soluções, ESF/análise funcional, code review, Agile, Scrum, System Design} \\
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+
+%-----------CERTIFICAÇÕES-----------
+\section{Certificações}
+  \resumeSubHeadingListStart
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \resumeItem{Build a Secure Google Cloud Network Skill Badge}
+        \resumeItem{Create ML Models with BigQuery ML Skill Badge}
+        \resumeItem{Implement Load Balancing on Compute Engine Skill Badge}
+        \resumeItem{Introduction to Data Analytics on Google Cloud}
+        \resumeItem{Build and Deploy Machine Learning Solutions on Vertex AI Skill Badge}
+        \resumeItem{Google Cloud Computing Foundations Certificate}
+        \resumeItem{Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud}
+        \resumeItem{Google Cloud Computing Foundations: Infrastructure in Google Cloud}
+        \resumeItem{Google Cloud Computing Foundations: Networking}
+        \resumeItem{Introduction to AI and Machine Learning on Google Cloud}
+    \end{itemize}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------FORMAÇÃO COMPLEMENTAR-----------
+\section{Formação Complementar}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senai São Paulo}{}
+      {Técnico em Eletroeletrônica}{}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+%-----------IDIOMAS-----------
+\section{Idiomas}
+  \resumeSubHeadingListStart
+    \resumeItem{Inglês - Proficiência profissional (B2+)}
+    \resumeItem{Espanhol - Conhecimento básico}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\end{document}
